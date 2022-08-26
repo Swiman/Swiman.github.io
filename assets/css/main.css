@@ -144,8 +144,8 @@ input, select, textarea {
 		/* padding-top: 7.5rem; */
 		color: #ffffff;
 		font-family: "Source Sans Pro", sans-serif;
-		font-weight: 300;
-		font-size: 1rem;
+		font-weight: 400;
+		font-size: 1.1rem;
 		line-height: 1.5;
 		text-align: justify;
 		
@@ -177,10 +177,10 @@ input, select, textarea {
 	p {
 		margin: 0 0 2rem 0;
 	}
-
+	/* First header */
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
-		font-weight: 300;
+		font-weight: 400;
 		line-height: 0.0;
 		margin: 0 0 1rem 0;
 		text-transform: uppercase;
@@ -903,11 +903,11 @@ input, select, textarea {
 /* Icons */
 
 	ul.icons {
-		-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		margin-top: 3rem;
+		-moz-transition: opacity 2.325s ease-in-out;
+		-webkit-transition: opacity 2.325s ease-in-out;
+		-ms-transition: opacity 2.325s ease-in-out;
+		transition: opacity 1.0s ease-in-out;
+		margin-top: 2rem;
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
@@ -1152,8 +1152,8 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/20201008_175329.jpg");
-			filter: grayscale(100%);
+			background-image: url("../../images/img.jpeg");
+			filter: grayscale(10%);
 			background-size: auto,1920px 1080px;
 			background-position: center, center;
 			background-repeat: no-repeat, no-repeat;
@@ -1161,16 +1161,17 @@ input, select, textarea {
 		}
 
 		#bg:after {
-			-moz-transform: scale(1.0); # 1.125
-			-webkit-transform: scale(1.0);
-			-ms-transform: scale(1.0);
-			transform: scale(1.0);
+			-moz-transform: scale(1.125);
+			-webkit-transform: scale(1.125);
+			-ms-transform: scale(1.125);
+			transform: scale(1.125);
 			-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out;
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
 			background-image: url("../../images/bg.jpg");
 			background-position: center;
+			/* filter: grayscale(100%); */
 			background-size: cover;
 			background-repeat: no-repeat;
 			z-index: 1;
@@ -1265,21 +1266,21 @@ input, select, textarea {
 		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-		background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-		background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-		background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
+		/* background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 0%); */
+		/* background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 0%); */
+		/* background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 0%); */
+		/* background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 0%); */
 		max-width: 100%;
 		text-align: center;
 	}
 
 		#header > * {
-			-moz-transition: opacity 0.325s ease-in-out;
-			-webkit-transition: opacity 0.325s ease-in-out;
-			-ms-transition: opacity 0.325s ease-in-out;
-			transition: opacity 0.325s ease-in-out;
+			-moz-transition: opacity 2.325s ease-in-out;
+			-webkit-transition: opacity 2.325s ease-in-out;
+			-ms-transition: opacity 2.325s ease-in-out;
+			transition: opacity 1.0s ease-in-out;
 			position: relative;
-			margin-top: 3.5rem;
+			margin-top: 0rem;
 		}
 
 			#header > *:before {
@@ -1290,7 +1291,7 @@ input, select, textarea {
 				left: calc(50% - 1px);
 				width: 1px;
 				height: calc(3.5rem + 1px);
-				background: #ffffff;
+				background: #e7010100;
 			}
 
 		#header > :first-child {
@@ -1302,15 +1303,17 @@ input, select, textarea {
 			}
 
 		#header .logo {
-			width: 5.5rem;
-			height: 5.5rem;
+			width: 9.5rem;
+			height: 9.5rem;
 			line-height: 5.5rem;
-			border: solid 1px #ffffff;
+			border: solid 1px #f5070700;
 			border-radius: 100%;
+
+			color: transparent;
 		}
 
 			#header .logo .icon:before {
-				font-size: 2rem;
+				font-size: 1rem;
 			}
 
 		#header .content {
@@ -1347,6 +1350,7 @@ input, select, textarea {
 			}
 
 		#header nav ul {
+			margin-top: 3.5rem;
 			display: -moz-flex;
 			display: -webkit-flex;
 			display: -ms-flex;
@@ -1637,14 +1641,12 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		-moz-transition: opacity 2.0s ease-in-out;
+		-webkit-transition: opacity 2.0s ease-in-out;
+		-ms-transition: opacity 2.0s ease-in-out;
+		transition: opacity 1.5s ease-in-out;
 		width: 100%;
 		max-width: 100%;
-		/* margin-top: 1rem; */
-		margin-bottom: 3rem;
 		text-align: center;
 	}
 
